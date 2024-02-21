@@ -30,8 +30,27 @@ class OrderController extends AbstractController
             'code'=>200,
             'message'=>'ok',
             'data'=>[
-                'list'=>$list
+                'list'=>$list,
+                'page'=>$page,
+                'page_size'=>$pageSize,
             ],
+        ];
+        return $response->json($jsonData);
+    }
+
+    /**
+     * 详情
+     * @param ResponseInterface $response
+     * @return Psr7ResponseInterface
+     */
+    public function detail(ResponseInterface $response) : Psr7ResponseInterface
+    {
+        $orderNo = $this->request->input('order_no', '');
+        $detail=(new OrderService())->detail($orderNo);
+        $jsonData=[
+            'code'=>200,
+            'message'=>'ok',
+            'data'=>$detail,
         ];
         return $response->json($jsonData);
     }
