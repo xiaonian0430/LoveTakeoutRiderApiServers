@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 /**
- * 配置
+ * 主配置入库文件
  * @author xiaonian
  * @date 2024-02-18
  */

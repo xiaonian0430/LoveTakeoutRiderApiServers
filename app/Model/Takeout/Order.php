@@ -9,6 +9,7 @@ use Hyperf\DbConnection\Model\Model;
 class Order extends Model
 {
     protected ?string $table = 'lt_order';
+    const TABLE_NAME = 'lt_order';
 
     const CREATED_AT = null;
 

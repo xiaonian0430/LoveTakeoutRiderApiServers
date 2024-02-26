@@ -1,8 +1,8 @@
 version: '3'
 services:
-  hyperf-skeleton:
-    container_name: hyperf-skeleton
-    image: hyperf-skeleton
+  rider-server:
+    container_name: rider-server
+    image: rider-server
     build:
       context: .
     volumes:
@@ -15,4 +15,4 @@ services:
 
 networks:
   default:
-    name: hyperf-skeleton
+    name: rider-network

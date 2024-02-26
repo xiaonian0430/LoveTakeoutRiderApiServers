@@ -16,4 +16,4 @@ vendor/
 /phpunit.xml
 .github
 composer.lock
-
+*.exe.stackdump

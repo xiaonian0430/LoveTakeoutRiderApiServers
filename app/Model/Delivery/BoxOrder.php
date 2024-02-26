@@ -6,12 +6,12 @@ namespace App\Model\Delivery;
 
 use Hyperf\DbConnection\Model\Model;
 
-class Order extends Model
+class BoxOrder extends Model
 {
-    protected ?string $table = 'delivery_order';
-    const TABLE_NAME = 'delivery_order';
-
+    protected ?string $table = 'delivery_box_order';
+    const TABLE_NAME = 'delivery_box_order';
     const CREATED_AT = null;
 
     const UPDATED_AT = null;
+
 }

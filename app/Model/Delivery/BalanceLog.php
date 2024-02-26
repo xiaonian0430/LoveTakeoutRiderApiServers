@@ -6,10 +6,10 @@ namespace App\Model\Delivery;
 
 use Hyperf\DbConnection\Model\Model;
 
-class Order extends Model
+class BalanceLog extends Model
 {
-    protected ?string $table = 'delivery_order';
-    const TABLE_NAME = 'delivery_order';
+    protected ?string $table = 'delivery_balance_log';
+    const TABLE_NAME = 'delivery_balance_log';
 
     const CREATED_AT = null;
 
